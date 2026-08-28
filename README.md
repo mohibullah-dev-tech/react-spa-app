@@ -1,16 +1,152 @@
-# React + Vite
+# React SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Single Page Application (SPA)** built with React. The application demonstrates client-side routing, global state management, smooth page transitions, and responsive user interface design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Coming soon...
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🏠 **Three Pages** — Home, About, and Contact
+* ⚡ **Fast Navigation** — Navigate without full page reloads
+* 🧭 **React Router** — Client-side routing
+* 🌙 **Light & Dark Mode** — Global theme management using Context API
+* 🔄 **State Management** — Shared state maintained across pages
+* ✨ **Smooth Animations** — Page transitions powered by Framer Motion
+* 📝 **Interactive Contact Form** — Form state managed with React
+* 📱 **Fully Responsive** — Optimized for desktop, tablet, and mobile devices
+* 🎨 **Modern UI** — Clean design with gradients, cards, and interactive effects
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology       | Purpose                         |
+| ---------------- | ------------------------------- |
+| React            | User interface development      |
+| Vite             | Development and build tool      |
+| React Router DOM | Client-side routing             |
+| Context API      | Global state management         |
+| Framer Motion    | Animations and page transitions |
+| CSS3             | Styling and responsive design   |
+
+## 📂 Project Structure
+
+```text
+react-spa-app/
+│
+├── src/
+│   ├── components/
+│   │   ├── Layout.jsx
+│   │   └── Navbar.jsx
+│   │
+│   ├── context/
+│   │   └── AppContext.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   └── Contact.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
+## ⚙️ Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/mohibullah-dev-tech/react-spa-app.git
+```
+
+### Navigate to the project directory
+
+```bash
+cd react-spa-app
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+## 🏗️ Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## 🧠 Key Concepts Demonstrated
+
+### React Router
+
+The application uses React Router DOM for client-side navigation between:
+
+* Home
+* About
+* Contact
+
+Navigation happens without full page reloads.
+
+### Context API
+
+React Context API manages the application's global theme state.
+
+The selected theme remains active while navigating between different pages.
+
+### Framer Motion
+
+Framer Motion provides smooth animations when users navigate between pages.
+
+### React State Management
+
+The Contact page uses React `useState` to manage:
+
+* Form input values
+* Form submission state
+
+## 🎯 Project Objectives
+
+This project was built to demonstrate:
+
+* Single Page Application architecture
+* Client-side routing
+* Global state management
+* Dynamic React state updates
+* Smooth page transitions
+* Responsive frontend design
+* Modern React development practices
+
+## 👨‍💻 Author
+
+**Mohibullah**
+
+* GitHub: https://github.com/mohibullah-dev-tech
+
+## 📄 License
+
+This project is created for educational and learning purposes.
+
+---
+
+⭐ If you found this project helpful, consider giving it a star!
