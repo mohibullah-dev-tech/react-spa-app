@@ -16,6 +16,8 @@ export function AppProvider({ children }) {
   );
 }
 
+// This hook is intentionally exported alongside its provider for this small context module.
+// eslint-disable-next-line react-refresh/only-export-components
 export function useAppContext() {
   return useContext(AppContext);
 }
