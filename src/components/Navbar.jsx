@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { useAppContext } from "../context/AppContext";
 
 function Navbar() {
+  const { theme, toggleTheme } = useAppContext();
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${theme}`}>
       <div className="nav-container">
         <NavLink to="/" className="logo">
           ReactSPA
@@ -36,6 +39,14 @@ function Navbar() {
             Contact
           </NavLink>
         </div>
+
+        <button
+          className="theme-btn"
+          onClick={toggleTheme}
+          aria-label="Toggle theme"
+        >
+          {theme === "light" ? "🌙" : "☀️"}
+        </button>
       </div>
     </nav>
   );
